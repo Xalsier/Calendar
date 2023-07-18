@@ -18,16 +18,15 @@
   `;
   if (c && c.description) {
     try {
-      const response = await fetch(c.description);
+      const response = await fetch(`cal.json/${c}`); // Update the fetch URL here
       if (!response.ok) throw new Error("Cannot find description");
-      const text = await response.text();
-      evi.innerHTML = text;
     } catch (error) {
       evi.innerHTML = defaultDisplay;
     }
   }
   evi.style.display = evi.style.display === "none" ? "block" : "none"; // Toggle the display
 };
+
 造 = async (e, n, a, s) => {
   let d = 書[元]("div"),
     i = 日(a, s),
