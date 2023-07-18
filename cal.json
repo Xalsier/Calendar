@@ -1,25 +1,218 @@
 {
-    "2022-10-25": {"type": 5, "description": ""},
-    "2022-07-27": {"type": 5, "description": ""},
-    "2022-05-17": {"type": 5, "description": ""},
-    "2023-02-06": {"type": 5, "description": ""},
-    "2022-09-05": {"type": 5, "description": ""},
-    "2022-12-12": {"type": 5, "description": ""},
-    "2023-05-29": {"type": 1, "description": "../eve/2023_05_29.html"},
-    "2023-05-30": {"type": 1, "description": "../eve/2023_05_30.html"},
-    "2023-05-31": {"type": 1, "description": "../eve/2023_05_31.html"},
-    "2023-06-01": {"type": 1, "description": "../eve/2023_06_01.html"},
-    "2023-06-02": {"type": 1, "description": "../eve/2023_06_02.html"},
-    "2023-06-04": {"type": 1, "description": "../eve/2023_06_04.html"},
-    "2023-06-05": {"type": 2, "description": "../eve/2023_06_05.html"},
-    "2023-06-07": {"type": 1, "description": "../eve/2023_06_07.html"},
-    "2023-06-08": {"type": 1, "description": "../eve/2023_06_08.html"},
-    "2023-06-15": {"type": 2, "description": "../eve/2023_06_15.html"},
-    "2023-06-17": {"type": 1, "description": "../eve/2023_06_17.html"},
-    "2023-06-22": {"type": 1, "description": "../eve/2023_06_22.html"},
-    "2023-06-23": {"type": 1, "description": "../eve/2023_06_23.html"},
-    "2023-07-07": {"type": 1, "description": "../eve/2023_07_07.html"},
-    "2023-07-15": {"type": 1, "description": "../eve/2023_07_15.html"},
-    "2023-07-16": {"type": 1, "description": "../eve/2023_07_16.html"},
-    "2023-07-18": {"type": 1, "description": "../eve/2023_07_18.html"}
+    "2022-10-25": {
+        "type": 5,
+        "description": {}
+    },
+    "2022-07-27": {
+        "type": 5,
+        "description": {}
+    },
+    "2022-05-17": {
+        "type": 5,
+        "description": {}
+    },
+    "2023-02-06": {
+        "type": 5,
+        "description": {}
+    },
+    "2022-09-05": {
+        "type": 5,
+        "description": {}
+    },
+    "2022-12-12": {
+        "type": 5,
+        "description": {}
+    },
+    "2023-05-29": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.5.2)-スナップショット",
+            "bullets": [
+                "Added Webnovel Parser."
+            ]
+        }
+    },
+    "2023-05-30": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.5.3)-スナップショット",
+            "bullets": [
+                "Added Volume Card"
+            ]
+        }
+    },
+    "2023-05-31": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.5.4)-スナップショット",
+            "bullets": [
+                "Added markdown library (showdown)",
+                "Wordcount Patch",
+                "Footer Change"
+            ]
+        }
+    },
+    "2023-06-01": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.5.6)-スナップショット",
+            "bullets": [
+                "Webnovel is a bit more flexible.",
+                "It can handle more volumes in the future!"
+            ]
+        }
+    },
+    "2023-06-02": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.6.0)-スナップショット",
+            "bullets": [
+                "Fixed all console errors! (I hope)",
+                "Formatted content warning, added buttons."
+            ]
+        }
+    },
+    "2023-06-04": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.7.0)-スナップショット",
+            "bullets": [
+                "Moved the site from Github Pages to Cloudflare Pages.",
+                "Should expect faster loading times!"
+            ]
+        }
+    },
+    "2023-06-05": {
+        "type": 2,
+        "description": {
+            "img": "",
+            "title": "Wiki Update",
+            "bullets": [
+                "Work in progress 'Zsasz' article added to Wiki.",
+                "Not a lot there, I'll add more about him at some point!"
+            ]
+        }
+    },
+    "2023-06-07": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.8.0)-スナップショット",
+            "bullets": [
+                "Event descriptions!"
+            ]
+        }
+    },
+    "2023-06-08": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.8.2)-スナップショット",
+            "bullets": [
+                "Added tag functionality to the webnovel",
+                "Added an actual content warning to the placeholder.",
+                "Tried to fix what happens when a small phone rotates"
+            ]
+        }
+    },
+    "2023-06-15": {
+        "type": 2,
+        "description": {
+            "img": "",
+            "title": "Wiki Update",
+            "bullets": [
+                "Added Heather and Leo to the wiki",
+                "Didn't add too much, just art, species details, and formatting.",
+                "Made collapsible sections. Removed search descriptions."
+            ]
+        }
+    },
+    "2023-06-17": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.8.3)-スナップショット",
+            "bullets": [
+                "Moved the nav circles to the top.",
+                "Moved feedback to the footer."
+            ]
+        }
+    },
+    "2023-06-22": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.8.5)-スナップショット",
+            "bullets": [
+                "Cut down 172 lines of code for the webnovel.",
+                "Fixed bug where chapter content displays while viewing volume cards",
+                "Removed dependency on showdown converter for chapters.",
+                "Used webp for the background art, might be faster?",
+                "No longer a single page, working on creating URLs for other areas of the site."
+            ]
+        }
+    },    
+    "2023-06-23": {
+        "type": 1,
+        "description": {
+            "img": "../assets/C1.jpg",
+            "title": "(v0.8.7)-スナップショット",
+            "bullets": [
+                "(0.8.6) - Fixed a bug where a page doesn't redirect and just fetches inside the main page.",
+                "(0.8.7) - Webnovel doesn't require any javascript.",
+                "(0.8.7) - Added left sidebar for the wiki."
+            ]
+        }
+    },
+    "2023-07-07": {
+        "type": 1,
+        "description": {
+            "img": "../assets/C2.jpg",
+            "title": "(v0.8.8)-スナップショット",
+            "bullets": [
+                "Fixed... breadcrumbs? (Idk)"
+            ]
+        }
+    },
+    "2023-07-15": {
+        "type": 1,
+        "description": {
+            "img": "../assets/C3.jpg",
+            "title": "(v0.9.0)-スナップショット",
+            "bullets": [
+                "Added 'Vault'. You can find my sketches, art for the wiki, and art from the community there!",
+                "Moved credits for images from wiki to vault for simplicity."
+            ]
+        }
+    },
+    "2023-07-16": {
+        "type": 1,
+        "description": {
+            "img": "../assets/C4.jpg",
+            "title": "(v0.9.1)-スナップショット",
+            "bullets": [
+                "Added a loading spinner for the gallery",
+                "Testing out a feature where you can jump from an image in the wiki to the gallery to see credits. (Only works for Leo)",
+                "Using fallbacks again for images instead of locally storing them. Well, at least for the gallery.",
+                "Updated Leo from cat to leopard."
+            ]
+        }
+    },
+    "2023-07-18": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.9.1.5)-スナップショット",
+            "bullets": [
+                "You can now click on an image in the wiki and it'll show you the credits, plus it won't take you directly to the gallery page.",
+                "[Known Bug] Some issues with the CSS for the gallery images."
+            ]
+        }
+    }
 }

@@ -21,24 +21,55 @@
         t = new Date(a, s, n).setHours(0, 0, 0, 0) == 初.setHours(0, 0, 0, 0); // Ignore the time, just compare the dates.
       o[名] = `cd ${t && c ? `event-${c.type}` : 古(a, s, n) ? "past " + `past-event-${c?.type}` : ""} ${t ? "today" : ""}`,
       o.innerHTML = n;
-      if(c) {
-        o.onclick = _ => {
-          let evi = 書[找]("evi");
+      o.onclick = _ => {
+        let evi = 書[找]("evi");
+        if (c && c.description) {
           fetch(c.description) // Fetch the description HTML from the provided URL
             .then(response => {
               console.log(`Fetched event: ${c.description}`);
-              return response.text();
+              if (response.ok) {
+                return response.text();
+              } else {
+                throw new Error("Cannot find description");
+              }
             })
             .then(text => {
               evi.innerHTML = text;
-              if(evi.style.display === "none") { // Check if it's hidden
+              if (evi.style.display === "none") { // Check if it's hidden
+                evi.style.display = "block"; // If it's hidden, display it
+              } else {
+                evi.style.display = "none"; // If it's displayed, hide it
+              }
+            })
+            .catch(error => {
+              console.error(error);
+              console.log("Description URL cannot be found");
+              evi.innerHTML = `
+                <img src="${c.description.img}" width="200px" style="margin-top:10px;"></img>
+                <br> <strong>${c.description.title}</strong>
+                <br> ${Object.values(c.description.bullets).map(bullet => `- ${bullet}<br>`).join("")}
+              `;
+              if (evi.style.display === "none") { // Check if it's hidden
                 evi.style.display = "block"; // If it's hidden, display it
               } else {
                 evi.style.display = "none"; // If it's displayed, hide it
               }
             });
-        };
-      }
+        } else {
+          console.log("Description URL cannot be found");
+          evi.innerHTML = `
+            <img src="${c.description.img}" width="200px" style="margin-top:10px;"></img>
+            <br> <strong>${c.description.title}</strong>
+            <br> ${Object.values(c.description.bullets).map(bullet => `- ${bullet}<br>`).join("")}
+          `;
+          if (evi.style.display === "none") { // Check if it's hidden
+            evi.style.display = "block"; // If it's hidden, display it
+          } else {
+            evi.style.display = "none"; // If it's displayed, hide it
+          }
+        }
+      };
+      
       d.appendChild(o);
     });
     return d;
