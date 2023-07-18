@@ -161,7 +161,7 @@
     "2023-06-23": {
         "type": 1,
         "description": {
-            "img": "../assets/C1.jpg",
+            "img": "https://pbs.twimg.com/media/FzSTgNLWYAERI99?format=jpg&name=small",
             "title": "(v0.8.7)-スナップショット",
             "bullets": [
                 "(0.8.6) - Fixed a bug where a page doesn't redirect and just fetches inside the main page.",
@@ -173,7 +173,7 @@
     "2023-07-07": {
         "type": 1,
         "description": {
-            "img": "../assets/C2.jpg",
+            "img": "https://pbs.twimg.com/media/FzhS0gPWAAE3j97?format=jpg&name=small",
             "title": "(v0.8.8)-スナップショット",
             "bullets": [
                 "Fixed... breadcrumbs? (Idk)"
@@ -183,7 +183,7 @@
     "2023-07-15": {
         "type": 1,
         "description": {
-            "img": "../assets/C3.jpg",
+            "img": "https://pbs.twimg.com/media/F1ER6uNX0AAI5rF?format=jpg&name=small",
             "title": "(v0.9.0)-スナップショット",
             "bullets": [
                 "Added 'Vault'. You can find my sketches, art for the wiki, and art from the community there!",
@@ -194,7 +194,7 @@
     "2023-07-16": {
         "type": 1,
         "description": {
-            "img": "../assets/C4.jpg",
+            "img": "https://pbs.twimg.com/media/F1NQDMoXsAAYtpB?format=jpg&name=small",
             "title": "(v0.9.1)-スナップショット",
             "bullets": [
                 "Added a loading spinner for the gallery",
