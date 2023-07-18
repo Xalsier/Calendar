@@ -1,0 +1,86 @@
+#ca {display: inline-block;padding: 20px;background: transparent;text-align: center;width: 100%;}
+.cc {display: grid;grid-template-columns: repeat(7, 1fr [col-start]);gap: 10px;margin: 0 auto;}
+.cd {background-color: #ff4d4d;border-radius: 5px;text-align: center;cursor: pointer;font-size: 1.2rem;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);width: calc(100% - 10px);position: relative;transition: transform 0.3s ease;color: #000000;[data-day] {display: block;}}
+@keyframes bounce {0%, 100% {transform: scale(1.0);}50% {transform: scale(1.2);}}
+.cd:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.cw {display: flex;justify-content: center;align-items: center;font-weight: bold;text-align: center;padding: 10px;visibility: visible;color: rgb(0, 0, 0); translate: 0px 40px;}
+.empty {background-color: transparent;}
+.past {background-color: #270000;color:#e0e0e076;}
+.today {background-color: #ff4d4d;color: black;animation: vibrate 0.5s infinite;}
+.vibrate {animation: vibrate 0.5s infinite;will-change: transform;}
+.blink {animation: blink 2s infinite;will-change: opacity;}
+.event-1 {background-color: #ff60e4;color: #000000;}
+.event-2 {background-color: #55fc55;color: #000000;}
+.event-3 {background-color: #7070ff;color: #000000;}
+.event-4 {background-color: #55f9fc;color: #000000;}
+.event-5 {background-color: #fcd755;color: #000000;}
+.past-event-1 {background-color: #41173a;color: #ff60e4;}
+.past-event-2 {background-color: #164416;color: #55fc55;}
+.past-event-3 {background-color: #1d1d40;color: #7070ff;}
+.past-event-4 {background-color: #113131;color: #55f9fc;}
+.past-event-5 {background-color: #3f3614;color: #fcd755;}
+#cal-box {display: flex;width: 450px;margin: 0 auto;justify-content: center;}
+.cal-window {display: flex;justify-content: center;align-items: center;margin: 0 20px;position: relative;background-color: transparent;border-radius: 10px;box-sizing: border-box;}
+#cmy {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  translate: 0px 5px;
+  display: flex;
+  justify-content: center;
+}
+#wd {display: grid;grid-template-columns: auto repeat(7, 1fr [col-start]);font-size: 1.2rem;margin: 0 auto;gap: 2px;text-align: center;width: 289.33px;}
+#cal-toggle {
+  position: relative;
+  z-index: 1000;
+  margin-top: 10rem;
+}
+
+  #pm, #nm {  
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    border: none;
+  }
+  #evi {
+    position: fixed; /* Position it fixed within the viewport */
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center the element */
+    padding: 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Add rounded edges */
+    background-color: #000000; /* Add a background color for visibility */
+    display: none; /* Hide it by default */
+    z-index: 9999; /* Increase the z-index value */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add a drop-shadow */
+    transition: 0.3s; /* Add a transition */
+    width: 80%; /* Set a width */
+    max-width: 300px; /* Set a maximum width */
+    max-height: 500px; /* Set a maximum height */
+    overflow: auto; /* Make it scrollable for overflow */
+    word-wrap: break-word; /* Ensure that long strings of text will wrap */
+    text-align: left;
+    padding: 20px;
+}
+
+@media screen and (max-height: 360px) {
+#cal-toggle {
+  scale: 0.7;
+  top: 20%;
+  left: 41%;
+  transform: translate(-41%, -20%) translateY(150%) rotateY(180deg); /* Adjust the translation values */
+}
+}
+#evh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  translate: 0px 60px;
+}
