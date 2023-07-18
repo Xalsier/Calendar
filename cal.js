@@ -20,6 +20,7 @@
     try {
       const response = await fetch(`cal.json/${c}`); // Update the fetch URL here
       if (!response.ok) throw new Error("Cannot find description");
+      evi.innerHTML = defaultDisplay;
     } catch (error) {
       evi.innerHTML = defaultDisplay;
     }
