@@ -10,11 +10,6 @@
 }
 
 body {
-    background-color: #ffffff;
-    background-image: 
-        url('../img/bak/s4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
