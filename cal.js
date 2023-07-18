@@ -10,70 +10,41 @@
   }
   return clickInside;
 };
+显示事件 = async (c, evi) => {
+  const defaultDisplay = `
+    <img src="${c.description.img}" width="200px" style="margin-top:10px;"></img>
+    <br> <strong>${c.description.title}</strong>
+    <br> ${Object.values(c.description.bullets).map(bullet => `- ${bullet}<br>`).join("")}
+  `;
+  if (c && c.description) {
+    try {
+      const response = await fetch(c.description);
+      if (!response.ok) throw new Error("Cannot find description");
+      const text = await response.text();
+      evi.innerHTML = text;
+    } catch (error) {
+      evi.innerHTML = defaultDisplay;
+    }
+  }
+  evi.style.display = evi.style.display === "none" ? "block" : "none"; // Toggle the display
+};
 造 = async (e, n, a, s) => {
-  (d = 書[元]("div")),
-    (i = 日(a, s)),
-    (d[名] = "cc"),
-    Array.from({ length: i }).forEach(() => d.appendChild(Object.assign(書[元]("div"), { [名]: "cd empty" }))),
-    Array.from({ length: n }, (_, n) => n + 1).forEach(n => {
-      let o = 書[元]("div"),
-        c = e[`${a}-${(s + 1 + "").padStart(2, "0")}-${(n + "").padStart(2, "0")}`],
-        t = new Date(a, s, n).setHours(0, 0, 0, 0) == 初.setHours(0, 0, 0, 0); // Ignore the time, just compare the dates.
-      o[名] = `cd ${t && c ? `event-${c.type}` : 古(a, s, n) ? "past " + `past-event-${c?.type}` : ""} ${t ? "today" : ""}`,
-      o.innerHTML = n;
-      o.onclick = _ => {
-        let evi = 書[找]("evi");
-        if (c && c.description) {
-          fetch(c.description) // Fetch the description HTML from the provided URL
-            .then(response => {
-              console.log(`Fetched event: ${c.description}`);
-              if (response.ok) {
-                return response.text();
-              } else {
-                throw new Error("Cannot find description");
-              }
-            })
-            .then(text => {
-              evi.innerHTML = text;
-              if (evi.style.display === "none") { // Check if it's hidden
-                evi.style.display = "block"; // If it's hidden, display it
-              } else {
-                evi.style.display = "none"; // If it's displayed, hide it
-              }
-            })
-            .catch(error => {
-              console.error(error);
-              console.log("Description URL cannot be found");
-              evi.innerHTML = `
-                <img src="${c.description.img}" width="200px" style="margin-top:10px;"></img>
-                <br> <strong>${c.description.title}</strong>
-                <br> ${Object.values(c.description.bullets).map(bullet => `- ${bullet}<br>`).join("")}
-              `;
-              if (evi.style.display === "none") { // Check if it's hidden
-                evi.style.display = "block"; // If it's hidden, display it
-              } else {
-                evi.style.display = "none"; // If it's displayed, hide it
-              }
-            });
-        } else {
-          console.log("Description URL cannot be found");
-          evi.innerHTML = `
-            <img src="${c.description.img}" width="200px" style="margin-top:10px;"></img>
-            <br> <strong>${c.description.title}</strong>
-            <br> ${Object.values(c.description.bullets).map(bullet => `- ${bullet}<br>`).join("")}
-          `;
-          if (evi.style.display === "none") { // Check if it's hidden
-            evi.style.display = "block"; // If it's hidden, display it
-          } else {
-            evi.style.display = "none"; // If it's displayed, hide it
-          }
-        }
-      };
-      
-      d.appendChild(o);
-    });
-    return d;
-  };
+  let d = 書[元]("div"),
+    i = 日(a, s),
+    evi = 書[找]("evi");
+  d[名] = "cc";
+  Array.from({ length: i }).forEach(() => d.appendChild(Object.assign(書[元]("div"), { [名]: "cd empty" })));
+  Array.from({ length: n }, (_, n) => n + 1).forEach(n => {
+    let o = 書[元]("div"),
+      c = e[`${a}-${(s + 1 + "").padStart(2, "0")}-${(n + "").padStart(2, "0")}`],
+      t = new Date(a, s, n).setHours(0, 0, 0, 0) == 初.setHours(0, 0, 0, 0);
+    o[名] = `cd ${t && c ? `event-${c.type}` : 古(a, s, n) ? "past " + `past-event-${c?.type}` : ""} ${t ? "today" : ""}`;
+    o.innerHTML = n;
+    o.onclick = () => 显示事件(c, evi);
+    d.appendChild(o);
+  });
+  return d;
+};
 面 = null;
 初 = new Date(); // This now always represents today's date
 表示 = new Date(); // This new object will represent the displayed date
