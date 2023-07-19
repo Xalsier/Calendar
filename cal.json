@@ -211,7 +211,20 @@
             "title": "(v0.9.1.5)-スナップショット",
             "bullets": [
                 "You can now click on an image in the wiki and it'll show you the credits, plus it won't take you directly to the gallery page.",
-                "[Known Bug] Some issues with the CSS for the gallery images."
+                "[Known Bug] Some issues with the CSS for the gallery images.",
+                "Calendar now has all events inside of 1 json instead of fetching html"
+            ]
+        }
+    },
+    "2023-07-19": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.9.1.8)-スナップショット",
+            "bullets": [
+                "CSS issues with gallery images are fixed and look much better, on both the wiki and the gallery.",
+                "Added search box, and first instance of tags- Character, Artist, and Image Code",
+                "Successfully fixed issue where gallery images weren't working in wiki."
             ]
         }
     }
