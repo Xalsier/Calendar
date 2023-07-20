@@ -227,5 +227,16 @@
                 "Successfully fixed issue where gallery images weren't working in wiki."
             ]
         }
+    },
+    "2023-07-20": {
+        "type": 1,
+        "description": {
+            "img": "",
+            "title": "(v0.9.2)-スナップショット",
+            "bullets": [
+                "CSS issues with gallery have been mostly fixed and background image is fixed this time.",
+                "Added some meta tags and improved the tagging system a bit. More automatic."
+            ]
+        }
     }
 }
