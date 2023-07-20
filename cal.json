@@ -219,7 +219,7 @@
     "2023-07-19": {
         "type": 1,
         "description": {
-            "img": "",
+            "img": "https://raw.githubusercontent.com/Xalsier/nak_calendar/main/img/C5.jpg",
             "title": "(v0.9.1.8)-スナップショット",
             "bullets": [
                 "CSS issues with gallery images are fixed and look much better, on both the wiki and the gallery.",
