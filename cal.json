@@ -1,242 +1,70 @@
 {
-    "2022-10-25": {
-        "type": 5,
-        "description": {}
-    },
-    "2022-07-27": {
-        "type": 5,
-        "description": {}
-    },
-    "2022-05-17": {
-        "type": 5,
-        "description": {}
-    },
-    "2023-02-06": {
-        "type": 5,
-        "description": {}
-    },
-    "2022-09-05": {
-        "type": 5,
-        "description": {}
-    },
-    "2022-12-12": {
-        "type": 5,
-        "description": {}
-    },
-    "2023-05-29": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.5.2)-スナップショット",
-            "bullets": [
-                "Added Webnovel Parser."
-            ]
-        }
-    },
-    "2023-05-30": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.5.3)-スナップショット",
-            "bullets": [
-                "Added Volume Card"
-            ]
-        }
-    },
-    "2023-05-31": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.5.4)-スナップショット",
-            "bullets": [
-                "Added markdown library (showdown)",
-                "Wordcount Patch",
-                "Footer Change"
-            ]
-        }
-    },
-    "2023-06-01": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.5.6)-スナップショット",
-            "bullets": [
-                "Webnovel is a bit more flexible.",
-                "It can handle more volumes in the future!"
-            ]
-        }
-    },
-    "2023-06-02": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.6.0)-スナップショット",
-            "bullets": [
-                "Fixed all console errors! (I hope)",
-                "Formatted content warning, added buttons."
-            ]
-        }
-    },
-    "2023-06-04": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.7.0)-スナップショット",
-            "bullets": [
-                "Moved the site from Github Pages to Cloudflare Pages.",
-                "Should expect faster loading times!"
-            ]
-        }
-    },
-    "2023-06-05": {
-        "type": 2,
-        "description": {
-            "img": "",
-            "title": "Wiki Update",
-            "bullets": [
-                "Work in progress 'Zsasz' article added to Wiki.",
-                "Not a lot there, I'll add more about him at some point!"
-            ]
-        }
-    },
-    "2023-06-07": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.8.0)-スナップショット",
-            "bullets": [
-                "Event descriptions!"
-            ]
-        }
-    },
-    "2023-06-08": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.8.2)-スナップショット",
-            "bullets": [
-                "Added tag functionality to the webnovel",
-                "Added an actual content warning to the placeholder.",
-                "Tried to fix what happens when a small phone rotates"
-            ]
-        }
-    },
-    "2023-06-15": {
-        "type": 2,
-        "description": {
-            "img": "",
-            "title": "Wiki Update",
-            "bullets": [
-                "Added Heather and Leo to the wiki",
-                "Didn't add too much, just art, species details, and formatting.",
-                "Made collapsible sections. Removed search descriptions."
-            ]
-        }
-    },
-    "2023-06-17": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.8.3)-スナップショット",
-            "bullets": [
-                "Moved the nav circles to the top.",
-                "Moved feedback to the footer."
-            ]
-        }
-    },
-    "2023-06-22": {
-        "type": 1,
-        "description": {
-            "img": "",
-            "title": "(v0.8.5)-スナップショット",
-            "bullets": [
-                "Cut down 172 lines of code for the webnovel.",
-                "Fixed bug where chapter content displays while viewing volume cards",
-                "Removed dependency on showdown converter for chapters.",
-                "Used webp for the background art, might be faster?",
-                "No longer a single page, working on creating URLs for other areas of the site."
-            ]
-        }
-    },    
-    "2023-06-23": {
-        "type": 1,
-        "description": {
-            "img": "https://raw.githubusercontent.com/Xalsier/nak_calendar/main/img/C1.jpg",
-            "title": "(v0.8.7)-スナップショット",
-            "bullets": [
-                "(0.8.6) - Fixed a bug where a page doesn't redirect and just fetches inside the main page.",
-                "(0.8.7) - Webnovel doesn't require any javascript.",
-                "(0.8.7) - Added left sidebar for the wiki."
-            ]
-        }
-    },
-    "2023-07-07": {
-        "type": 1,
-        "description": {
-            "img": "https://raw.githubusercontent.com/Xalsier/nak_calendar/main/img/C2.jpg",
-            "title": "(v0.8.8)-スナップショット",
-            "bullets": [
-                "Fixed... breadcrumbs? (Idk)"
-            ]
-        }
-    },
     "2023-07-15": {
         "type": 1,
         "description": {
-            "img": "https://raw.githubusercontent.com/Xalsier/nak_calendar/main/img/C3.jpg",
-            "title": "(v0.9.0)-スナップショット",
-            "bullets": [
-                "Added 'Vault'. You can find my sketches, art for the wiki, and art from the community there!",
-                "Moved credits for images from wiki to vault for simplicity."
-            ]
+            "img": "../ass/profiles/nari.jpg",
+            "twitterLink": "https://x.com/Xalsier/status/1680143843662888960?s=20",
+            "title": "Maybe Nari"
         }
     },
-    "2023-07-16": {
+    "2023-09-03": {
         "type": 1,
         "description": {
-            "img": "https://raw.githubusercontent.com/Xalsier/nak_calendar/main/img/C4.jpg",
-            "title": "(v0.9.1)-スナップショット",
-            "bullets": [
-                "Added a loading spinner for the gallery",
-                "Testing out a feature where you can jump from an image in the wiki to the gallery to see credits. (Only works for Leo)",
-                "Using fallbacks again for images instead of locally storing them. Well, at least for the gallery.",
-                "Updated Leo from cat to leopard."
-            ]
+            "img": "../ass/profiles/shiro.jpg",
+            "twitterLink": "https://x.com/Xalsier/status/1698537943621652853?s=20",
+            "title": "First attempt (Or I guess second technically) of drawing Shiro."
         }
     },
-    "2023-07-18": {
+    "2023-09-07": {
         "type": 1,
         "description": {
-            "img": "",
-            "title": "(v0.9.1.5)-スナップショット",
-            "bullets": [
-                "You can now click on an image in the wiki and it'll show you the credits, plus it won't take you directly to the gallery page.",
-                "[Known Bug] Some issues with the CSS for the gallery images.",
-                "Calendar now has all events inside of 1 json instead of fetching html"
-            ]
+            "img": "../ass/profiles/ryou.jpg",
+            "twitterLink": "https://x.com/Xalsier/status/1699891550594179160?s=20",
+            "title": "Ryou! The snail is NOT friendly <_<"
         }
     },
-    "2023-07-19": {
+    "2023-09-12": {
         "type": 1,
         "description": {
-            "img": "https://raw.githubusercontent.com/Xalsier/nak_calendar/main/img/C5.jpg",
-            "title": "(v0.9.1.8)-スナップショット",
-            "bullets": [
-                "CSS issues with gallery images are fixed and look much better, on both the wiki and the gallery.",
-                "Added search box, and first instance of tags- Character, Artist, and Image Code",
-                "Successfully fixed issue where gallery images weren't working in wiki."
-            ]
+            "img": "../ass/profiles/zhen.png",
+            "twitterLink": "https://x.com/Xalsier/status/1701808730315030849?s=20",
+            "title": "Zhen? Or Nari? Still working on her concept design."
         }
     },
-    "2023-07-20": {
-        "type": 1,
+    "2023-09-13": {
+        "type": 5,
         "description": {
             "img": "",
-            "title": "(v0.9.2)-スナップショット",
-            "bullets": [
-                "CSS issues with gallery have been mostly fixed and background image is fixed this time.",
-                "Added some meta tags and improved the tagging system a bit. More automatic."
-            ]
+            "twitterLink": "",
+            "title": "Bug fixes: - Events type out like trivia, (Nearly lost the save file for the site)"
+        }
+    },
+    "2023-09-14": {
+        "type": 2,
+        "description": {
+            "img": "",
+            "title": "Early Codex release to Beta Reviewers at 06:00° AT New Moon            "
+        }
+    },
+    "2023-09-18": {
+        "type": 2,
+        "description": {
+            "img": "",
+            "title": "Public Codex release at 06:00° HM. 4th Waxing Crescent."
+        }
+    },
+    "2023-09-22": {
+        "type": 4,
+        "description": {
+            "img": "",
+            "title": "Early Chapter 1 Rollout to Beta Readers at 06:00° AT First Quarter."
+        }
+    },
+    "2023-09-29": {
+        "type": 4,
+        "description": {
+            "img": "",
+            "title": "Chapter 1 Release at 06:00° HM First Quarter."
         }
     }
 }
