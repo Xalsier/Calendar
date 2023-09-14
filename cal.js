@@ -3,7 +3,7 @@
 日 = (e, n) => new Date(e, n, 1).getDay();
 古 = (e, n, a) => new Date(e, n, a) < Date.now();
 隠 = _ => 面 && (面.innerHTML = "");
-獲 = _ => fetch("../json/cal.json").then(response => response.json()); // Fetch the calendar data from cal_dat.json
+獲 = _ => fetch("cal.json").then(response => response.json()); // Fetch the calendar data from cal_dat.json
 const 更新图片 = async (年, 月) => {
   const calendarData = await 獲();
   
