@@ -11,29 +11,42 @@
   <link rel="stylesheet" type="text/css" href="sty.css">
 </head>
 <body>
-  <div id="cal-toggle">
-    <div id="evi"></div>
-    <div id="evh">
+  <div class="modal" id="eventModal">
+    <div class="modal-content">
+      <button class="close" id="eventCloseBtn"></button>
+      <p id="eventContent">Event content will be loaded here.</p>
+    </div>
+  </div>
+  
+  <div class="modal" id="triviaModal">
+    <div class="modal-content">
+      <button class="close" id="closeBtn"></button>
+      <p id="triviaContent">Trivia content will be loaded here.</p>
+    </div>
+  </div>
+  <section id="window2" class="window">
+    <a href="" target="_blank">
+      <img id="overlay-image-id" src="" alt="Description of Image" class="overlay-image">
+    </a>
+    <div class="tab" id="evh">
       <button id="pm" aria-label="Previous month"></button>
       <div id="cmy"></div>
       <button id="nm" aria-label="Next month"></button>
     </div>
-    <div id="wd" lang="ja">
-      <div class="cw"><ruby>日<rp>(</rp><rt>にち</rt><rp>)</rp></ruby></div>
-      <div class="cw"><ruby>月<rp>(</rp><rt>げつ</rt><rp>)</rp></ruby></div>
-      <div class="cw"><ruby>火<rp>(</rp><rt>か</rt><rp>)</rp></ruby></div>
-      <div class="cw"><ruby>水<rp>(</rp><rt>すい</rt><rp>)</rp></ruby></div>
-      <div class="cw"><ruby>木<rp>(</rp><rt>もく</rt><rp>)</rp></ruby></div>
-      <div class="cw"><ruby>金<rp>(</rp><rt>きん</rt><rp>)</rp></ruby></div>
-      <div class="cw"><ruby>土<rp>(</rp><rt>ど</rt><rp>)</rp></ruby></div>
-    </div>
-    <div id="cal-box">
-      <div class="cal-window">
-        <div id="ca"></div>
+    <div class="window-content" id="calndars">
+      <div id="cal-toggle">				
+        <div id="evi"></div>
+        <div id="cal-box">
+          <div class="cal-window">
+            <div id="ca"></div>
+          </div>
+        </div>
+        <div id="moonClockContainer" style="z-index: 1;">
+          <p id="moonAltitude">Loading...</p>
+        </div>	
       </div>
     </div>
-    </div>
-  </div>
+  </section>
   <script src="cal.js" async type="text/javascript"></script>
 </body>
 </html>
