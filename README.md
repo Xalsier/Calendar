@@ -1,3 +1,3 @@
-# nak_calendar
+# calendar
 
 Calendar for my website

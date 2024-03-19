@@ -8,45 +8,31 @@
   <meta name="author" content="Xalsier Kitsune">
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" type="text/css" href="cal.css">
-  <link rel="stylesheet" type="text/css" href="sty.css">
 </head>
 <body>
-  <div class="modal" id="eventModal">
-    <div class="modal-content">
-      <button class="close" id="eventCloseBtn"></button>
-      <p id="eventContent">Event content will be loaded here.</p>
+  <div class="calendar-container">
+    <div class="calendar-header">
+        <button id="prevMonth">◀ 前</button>
+        <div class="current-date">
+            <strong id="monthAndYear"></strong> 
+        </div>            
+        <button id="nextMonth">次 ▶</button> 
     </div>
+
+    <div class="calendar-body">
+        <div class="calendar-weekdays">
+            <div>日</div> <div>月</div> <div>火</div> <div>水</div> <div>木</div> <div>金</div> <div>土</div> </div>
+        
+        <div class="calendar-days"></div>
+    </div>
+    <div class="status-updates">
+          <span class="circle chapter"></span> Chapter Updates
+          <span class="circle site-update"></span> Site Update
+    </div>
+      
   </div>
-  
-  <div class="modal" id="triviaModal">
-    <div class="modal-content">
-      <button class="close" id="closeBtn"></button>
-      <p id="triviaContent">Trivia content will be loaded here.</p>
-    </div>
-  </div>
-  <section id="window2" class="window">
-    <a href="" target="_blank">
-      <img id="overlay-image-id" src="" alt="Description of Image" class="overlay-image">
-    </a>
-    <div class="tab" id="evh">
-      <button id="pm" aria-label="Previous month"></button>
-      <div id="cmy"></div>
-      <button id="nm" aria-label="Next month"></button>
-    </div>
-    <div class="window-content" id="calndars">
-      <div id="cal-toggle">				
-        <div id="evi"></div>
-        <div id="cal-box">
-          <div class="cal-window">
-            <div id="ca"></div>
-          </div>
-        </div>
-        <div id="moonClockContainer" style="z-index: 1;">
-          <p id="moonAltitude">Loading...</p>
-        </div>	
-      </div>
-    </div>
-  </section>
-  <script src="cal.js" async type="text/javascript"></script>
+  <script src="script.js" async type="text/javascript"></script>
+  <script src="color.js" async type="text/javascript"></script>
+  <script src="events.js" async type="text/javascript"></script>
 </body>
 </html>
